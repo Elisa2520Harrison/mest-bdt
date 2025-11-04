@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
+import { mongooseNormalizePlugin } from '@kikiutils/mongoose/plugins/normalize';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ProfilesModule } from './profiles/profiles.module';
@@ -10,7 +11,12 @@ import { CohortsModule } from './cohorts/cohorts.module';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    MongooseModule.forRoot(process.env.MONGO_URI as string),
+    MongooseModule.forRoot(process.env.MONGO_URI as string, {
+      connectionFactory: (connection) => {
+        connection.plugin(mongooseNormalizePlugin);
+        return connection;
+      },
+    }),
     ProfilesModule,
     ProgramsModule,
     CohortsModule,
