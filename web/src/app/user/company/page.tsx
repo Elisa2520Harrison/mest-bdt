@@ -29,6 +29,15 @@ export default function UserCompany() {
            className="rounded-lg"
           />
         </div>
+        
+      </div>
+
+      {/* Summary section */}
+      <div className="lg:col-span-2 bg-white dark:bg-[#1a1d24] p-6 rounded-2xl shadow">
+        <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Neo Creative Solutions Ltd.</h2>
+        <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 mb-4">Sector: Technology • Product: Saas Platform </p>
+
+        <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">Mission: To make digital tools accessible and affordable for SMEs while improving productivity and revenue growth. </p>
       </div>
 
       
