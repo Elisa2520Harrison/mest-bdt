@@ -39,9 +39,9 @@ export default function UserProfile() {
         <div className="flex-1 space-y-8">
 
           <div>
-            <h2 className="text-xl font-semibold">Elizabeth Harrison</h2>
+            <h2 className="text-xl font-semibold">Coco Jones</h2>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
-              elizabethtemi1@gmail.com
+              cocojones123@gmail.com
             </p>
           </div>
 
@@ -60,7 +60,7 @@ export default function UserProfile() {
               <p className="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">
                 Phone
               </p>
-              <p className="font-medium">+233 553 461 694</p>
+              <p className="font-medium">+233 234 567 900</p>
             </div>
 
             <div>
@@ -75,6 +75,13 @@ export default function UserProfile() {
                 Member Since
               </p>
               <p className="font-medium">January 2025</p>
+            </div>
+
+             <div>
+              <p className="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">
+                Bio/About
+              </p>
+              <p className="font-medium">Tech enthusiast and frontend developer.</p>
             </div>
           </div>
 
