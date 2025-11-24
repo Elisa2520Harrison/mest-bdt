@@ -32,113 +32,68 @@ export default function UserProfilePage() {
           </button>
         </div>
 
-        {/* USER INFORMATION */}
-        <div className="flex-1 space-y-8">
-          <div>
-            <h2 className="text-xl font-semibold">Coco Jones</h2>
-            <p className="text-gray-600 dark:text-gray-400 text-sm">
-              cocojones123@gmail.com
-            </p>
-          </div>
-
-          <div className="border-b dark:border-gray-700 flex gap-6 text-sm">
-            <button className="pb-2 border-b-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400">
+        {/* USER INFORMATION FORM */}
+        <div className="flex-1 space-y-6">
+          <div className="border-b dark:border-gray-700 flex gap-6 text-sm pb-4">
+            <button className="text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 pb-2">
               About
             </button>
-            <button className="pb-2 text-gray-500 dark:text-gray-400">
+            <button className="text-gray-500 dark:text-gray-400 pb-2">
               Settings
             </button>
           </div>
 
-          {/* CONTACT INFORMATION */}
-          <div className="space-y-4">
+          <form className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <p className="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">
-                Phone
-              </p>
-              <p className="font-medium">+233 234 567 900</p>
+              <label className="text-sm">Full Name</label>
+              <input
+                defaultValue="Coco Jones"
+                className="w-full mt-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent text-sm"
+              />
             </div>
 
             <div>
-              <p className="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">
-                Location
-              </p>
-              <p className="font-medium">Accra, Ghana</p>
+              <label className="text-sm">Email</label>
+              <input
+                defaultValue="cocoj123@gmail.com"
+                className="w-full mt-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent text-sm"
+              />
             </div>
 
             <div>
-              <p className="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">
-                Member Since
-              </p>
-              <p className="font-medium">January 2025</p>
+              <label className="text-sm">Phone Number</label>
+              <input
+                defaultValue="+233 551 632 1234"
+                className="w-full mt-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent text-sm"
+              />
             </div>
 
             <div>
-              <p className="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">
-                Bio/About
-              </p>
-              <p className="font-medium">
-                Tech enthusiast and frontend developer.
-              </p>
+              <label className="text-sm">Location</label>
+              <input
+                defaultValue="Accra, Ghana"
+                className="w-full mt-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent text-sm"
+              />
             </div>
-          </div>
 
-          {/* EDIT FORM */}
-          <div className="mt-10">
-            <h3 className="text-lg font-semibold mb-4">Edit Information</h3>
+            <div className="col-span-full">
+              <label className="text-sm">Bio / About</label>
+              <textarea
+                rows={4}
+                defaultValue="Tech enthusiast and frontend developer."
+                className="w-full mt-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent text-sm"
+              />
+            </div>
 
-            <form className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div>
-                <label className="text-sm">Full Name</label>
-                <input
-                  defaultValue="Elizabeth Harrison"
-                  className="w-full mt-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent text-sm"
-                />
-              </div>
-
-              <div>
-                <label className="text-sm">Email</label>
-                <input
-                  defaultValue="elizabethtemi1@gmail.com"
-                  className="w-full mt-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent text-sm"
-                />
-              </div>
-
-              <div>
-                <label className="text-sm">Phone Number</label>
-                <input
-                  defaultValue="+233 553 461 694"
-                  className="w-full mt-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent text-sm"
-                />
-              </div>
-
-              <div>
-                <label className="text-sm">Location</label>
-                <input
-                  defaultValue="Accra, Ghana"
-                  className="w-full mt-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent text-sm"
-                />
-              </div>
-
-              <div className="col-span-full">
-                <label className="text-sm">Bio / About</label>
-                <textarea
-                  rows={4}
-                  defaultValue="Tech enthusiast and frontend developer."
-                  className="w-full mt-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent text-sm"
-                />
-              </div>
-
-              <div className="col-span-full flex justify-end">
-                <button
-                  type="button"
-                  className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg text-sm"
-                >
-                  Save Changes
-                </button>
-              </div>
-            </form>
-          </div>
+            <div className="col-span-full flex justify-end">
+              <button
+                type="button"
+                className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg text-sm"
+              >
+                Save Changes
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
