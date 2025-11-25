@@ -38,9 +38,6 @@ export default function UserProfilePage() {
             <button className="text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 pb-2">
               About
             </button>
-            <button className="text-gray-500 dark:text-gray-400 pb-2">
-              Settings
-            </button>
           </div>
 
           <form className="grid grid-cols-1 sm:grid-cols-2 gap-6">
